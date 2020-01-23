@@ -1,7 +1,8 @@
 import socket
 mysocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 port = 11999
-mysocket.bind(("10.65.33.16", port))
+ip = input("Enter IP: ")
+mysocket.bind((ip, port))
 mysocket.listen(1)
 clientsocket, addr = mysocket.accept()
 print("Got a connection from %s" % str(addr))
