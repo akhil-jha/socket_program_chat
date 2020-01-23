@@ -2,7 +2,8 @@ import socket
 
 mysocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 port = 11999
-mysocket.connect(("10.65.33.16", port))
+
+mysocket.connect((ip, port)) # ip from system1.py
 flag = 1
 while flag == 1:
     message_outbound = input("Enter your message (For exit: exit() ):  ")
