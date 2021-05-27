@@ -1,4 +1,5 @@
-owners_files.yaml
+> cat owners_files.yaml
+Output:
 - owner: user1
   files:
     - tests/a
